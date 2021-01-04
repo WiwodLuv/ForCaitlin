@@ -350,9 +350,10 @@ function ppp(){
   var pmdw = document.getElementById("pmdanwaktu")
   var dd = document.getElementById("tema")
   var jj = document.getElementById("inget")
+  var audio = document.getElementById("audio")
   if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
     document.getElementById('temah').disabled = true
-    
+    audio.pause()
     sleep(3000).then(() => {
       
       
