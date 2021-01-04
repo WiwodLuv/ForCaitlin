@@ -1,0 +1,328 @@
+
+@font-face{
+    font-family: "mono";
+    src: url(font/monof55.ttf);
+  }
+@font-face{
+    font-family: "cyber";
+    src: url(font/cyber.ttf);
+  }
+@font-face{
+    font-family: "Crush";
+    src: url(font/kntl.ttf);
+  }
+@font-face{
+    font-family: "digital";
+    src: url(font/digital-7.ttf);
+  }
+@font-face{
+    font-family: "quote";
+    src: url(font/Quote.ttf);
+  }
+body{
+  background: linear-gradient(to left , #474747, #333333, #252525);
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  display: flex;
+}
+.bg{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.back{
+  position: relative;
+  width: 90vh;
+  height: 90vh;
+  background: linear-gradient(#4abbfc, #ff51b7);
+  border-radius: 50%;
+  animation: muter 3s linear infinite;
+ }
+ @keyframes muter{
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ .back:active{
+   animation: muter 0.5s linear infinite;
+ }
+ .back::after{
+   content: "";
+   position: absolute;
+   top: 35px;
+   left: 35px;
+   bottom: 35px;
+   right: 35px;
+   background-color: #333333;
+   border-radius: 50%;
+ }
+ .back span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#4abbfc, #ff51b7);
+  border-radius: 50%;
+ }
+.back span:nth-child(1){
+  filter: blur(5px);
+}
+.back span:nth-child(2){
+  filter: blur(20px);
+}
+.back span:nth-child(3){
+  filter: blur(30px);
+}
+.back span:nth-child(4){
+  filter: blur(60px);
+}
+ .box{
+   z-index: 2;
+   width: 400px;
+   height: 300px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: whitesmoke;
+   font-size: 15px;
+   display: flex;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 0 20px #000000;
+   animation: muncul 0.5s 1;
+ }
+ @keyframes muncul{
+   0%{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0;
+    opacity: 0;
+   }
+   30%{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 0%;
+   }
+   60%{
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+   }
+   100%{
+    opacity: 1;
+  }
+ }
+ .box h1{
+   letter-spacing: 10px;
+   background: linear-gradient(to left , #474747, #333333, #252525);
+   -webkit-background-clip: text;
+   background-clip: text;
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: transparent;
+   animation: glic 2s steps(100) infinite;
+   cursor: pointer;
+ }
+ .box h1:active{
+   animation: none;
+ }
+ .box h2:active{
+   animation: none;
+   animation: glic 2s steps(100) infinite;
+ }
+ .box h2{
+   cursor: pointer;
+   position: absolute;
+   background: linear-gradient(to left , #474747, #333333, #252525);
+   -webkit-background-clip: text;
+   background-clip: text;
+   top: 28%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: transparent;
+}
+.box nav{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333333;
+}
+.box nav .nama{
+  font-weight: 400;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #333333;
+  outline: none;
+  font-family: "mono";
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.box nav .enter{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to left , #474747, #333333, #252525);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'DM Mono', monospace;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+  transition: .5s;
+  letter-spacing: 10px;
+}
+.box nav .enter:hover{
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 5px #4abbfc,
+              0 0 20px #ff51b7,
+              0 0 60px #4abbfc,
+              0 0 200px #ff51b7,
+              0 0 600px #4abbfc;
+  animation: glic 2s steps(100) infinite;
+}
+.box nav .enter:active{
+  color: rgb(162, 0, 255);
+  animation: hilang 0.5s 1;
+}
+
+#particles-js{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  opacity: 100%;
+  transition: 1s;
+  z-index: 1;
+}
+
+
+
+@keyframes hilang{
+  100%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1050px){
+	.box{
+    width: 300px;
+    height: 200px;
+  }
+  .box h2{
+    display: none;
+  }
+  .back{
+    width: 40vh;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 780px){
+  .back{
+    width: 50vh;
+    height: 50vh;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+  }
+  .box h1{
+    font-size: 15px;
+  }
+  .box nav .nama{
+    width: 80px;
+    height: 20px;
+  }
+  .box nav .enter{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
+
+
+@keyframes glic {
+  0% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  4% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  5% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  10% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  11% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  15% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  16% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  20% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  21% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+  30% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+  31% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  40% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  41% {text-shadow: 50px 0 0 blue, -50px 0 0 lime;}
+  42% {text-shadow: 0 0 0 blue, 0 0 0 lime;}
+  43% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  46% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  47% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  50% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  51% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  55% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  56% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  60% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  61% {text-shadow: 30px 0 0 red, -30px 0 0 lime;}
+  62% {text-shadow: 0 0 0 red, 0 0 0 lime;}
+  63% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+  66% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+  67% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  70% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  71% {text-shadow: 70px 0 0 red, -70px 0 0 blue;}
+  72% {text-shadow: 0 0 0 red, 0 0 0 blue;}
+  73% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  76% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+  77% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  80% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+  81% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  85% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+  86% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  90% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+  91% {text-shadow: 60px 0 0 lime, -60px 0 0 blue;}
+  92% {text-shadow: 0 0 0 lime, 0 0 0 blue;}
+  92% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+  95% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+  96% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  99% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  100% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+}
