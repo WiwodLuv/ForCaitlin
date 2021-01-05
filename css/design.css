@@ -909,8 +909,8 @@ audio{
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black }
+  from, to { border-color: black }
+  50% { border-color:  white}
 }
 .tema{
   font-family: 'Source Code Pro', monospace;

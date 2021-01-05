@@ -382,7 +382,7 @@ function ppp(){
       document.getElementById('aurora').style.display = 'none'
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
-      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
+      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite, fadeout 2.5s'
       penging.innerHTML = 'Hi, Caitlin'
       jj.style.display = 'none'
       prstya.style.display = 'none'
@@ -392,11 +392,22 @@ function ppp(){
       
     });
     sleep(11000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite, fadeout 2.5s'
+      penging.style.display = 'none'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(13000).then(() => {
       prstya.style.display = 'block'
       prstya.innerHTML = 'Do You Want'
-      prstya.onclick = function(event){
-        window.location.href = "https://api.whatsapp.com/send?phone=6281574999858&text=Yes i want";
-      }
+      
       prstya.style.fontSize = '60px'
       penging.style.display = 'none'
       prstya.style.transition = '0s'
@@ -405,26 +416,31 @@ function ppp(){
       prstya.style.whiteSpace = 'nowrap'
       prstya.style.fontFamily = 'Crush'
       prstya.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
-      pmdw.style.position = 'absolute'
-      pmdw.style.transform = 'translate(-50%, -50%)'
-      pmdw.style.top = '70%'
       
       
       
     });
-    sleep(15000).then(() => {
+    sleep(17000).then(() => {
       penging.style.display = 'block'
-      penging.innerHTML = 'To Be Mine'
+      penging.innerHTML = 'To Be My'
       penging.style.whiteSpace = 'nowrap'
       penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
+      prstya.onclick = function(event){
+        window.location.href = "https://api.whatsapp.com/send?phone=6281574999858&text=Yes i want";
+      }
     })
     sleep(20000).then(() => {
       jj.style.display = 'block'
       jj.style.fontSize = '30px'
-      jj.innerHTML = '?'
+      jj.innerHTML = 'Girlfriend?'
       jj.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
+      jj.onclick = function(event){
+        window.location.href = "https://api.whatsapp.com/send?phone=6281574999858&text=Yes i want";
+      }
     })
-    
+    sleep(23000).then(() => {
+      jj.style.animation = 'typing 5s steps(30, end), glic 1s steps(100) infinite'
+    })
     
   } else {
     document.getElementById('dafaprasetya').innerHTML = 'Happy Birthday!!';
