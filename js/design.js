@@ -351,6 +351,7 @@ function ppp(){
   var dd = document.getElementById("tema")
   var jj = document.getElementById("inget")
   var audio = document.getElementById("audio")
+  var ketik = 'typing 2s steps(25, end), blink-caret .5s step-end infinite'
   if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
     document.getElementById('temah').disabled = true
     audio.pause()
@@ -364,8 +365,10 @@ function ppp(){
       
       
     });
+    ///menghilang
     sleep(3500).then(() => {
       document.getElementById('temah').disabled = true
+      
       document.getElementById('aurora').style.animation = 'fadeout 2.5s'
       document.getElementById("jam").style.animation = 'fadeout 2.5s'
       document.getElementById("ea").style.animation = 'fadeout 2.5s'
@@ -378,11 +381,13 @@ function ppp(){
       
       
     });
+    //hi
     sleep(6000).then(() => {
       document.getElementById('aurora').style.display = 'none'
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
-      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite, fadeout 2.5s'
+      penging.style.animation = ketik
+      penging.style.fontFamily = 'quote'
       penging.innerHTML = 'Hi, Caitlin'
       jj.style.display = 'none'
       prstya.style.display = 'none'
@@ -391,12 +396,13 @@ function ppp(){
       
       
     });
-    sleep(11000).then(() => {
+    sleep(8000).then(() => {
+      penging.style.display = 'block'
       document.getElementById('aurora').style.display = 'none'
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
-      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite, fadeout 2.5s'
-      penging.style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
       jj.style.display = 'none'
       prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
@@ -404,43 +410,232 @@ function ppp(){
       
       
     });
-    sleep(13000).then(() => {
-      prstya.style.display = 'block'
-      prstya.innerHTML = 'Do You Want'
-      
-      prstya.style.fontSize = '60px'
-      penging.style.display = 'none'
-      prstya.style.transition = '0s'
-      jj.style.transition = '0s'
+    //sebelumnya
+    sleep(9000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'typing 2s steps(25, end), blink-caret .5s step-end infinite'
+      penging.innerHTML = 'Sebelumnya'
       jj.style.display = 'none'
-      prstya.style.whiteSpace = 'nowrap'
-      prstya.style.fontFamily = 'Crush'
-      prstya.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
       
       
       
     });
-    sleep(17000).then(() => {
+    sleep(11000).then(() => {
       penging.style.display = 'block'
-      penging.innerHTML = 'To Be My'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
-      penging.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
-      prstya.onclick = function(event){
-        window.location.href = "https://api.whatsapp.com/send?phone=6281574999858&text=Yes i want";
-      }
-    })
-    sleep(20000).then(() => {
-      jj.style.display = 'block'
-      jj.style.fontSize = '30px'
-      jj.innerHTML = 'Girlfriend?'
-      jj.style.animation = 'typing 5s steps(30, end), blink-caret 30s step-end infinite'
-      jj.onclick = function(event){
-        window.location.href = "https://api.whatsapp.com/send?phone=6281574999858&text=Yes i want";
-      }
-    })
+      
+      
+      
+    });
+    //gw mau ngucapin
+    sleep(12000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = ketik
+      penging.innerHTML = 'Gw Mau Ngucapin'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(16000).then(() => {
+      penging.style.display = 'block'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //happy birthday
+    sleep(17000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = ketik
+      penging.innerHTML = 'Happy Birthday!!'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(22000).then(() => {
+      penging.style.display = 'block'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //and
     sleep(23000).then(() => {
-      jj.style.animation = 'typing 5s steps(30, end), glic 1s steps(100) infinite'
-    })
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = ketik
+      penging.innerHTML = 'And'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(24000).then(() => {
+      penging.style.display = 'block'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //do1
+    sleep(25000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = ketik
+      penging.innerHTML = 'Do'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(26000).then(() => {
+      penging.style.display = 'block'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //do2
+    sleep(27000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = ketik
+      penging.innerHTML = 'Do'
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    sleep(28000).then(() => {
+      penging.style.display = 'block'
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      penging.style.animation = 'fadeout 1s'
+      
+      jj.style.display = 'none'
+      prstya.style.display = 'none'
+      penging.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //doyouwant
+    sleep(29000).then(() => {
+      document.getElementById('aurora').style.display = 'none'
+      document.getElementById("jam").style.display = 'none'
+      document.getElementById("ea").style.display = 'none'
+      prstya.style.animation = ketik
+      prstya.style.fontFamily = 'east'
+      prstya.innerHTML = 'Do You Want'
+      jj.style.display = 'none'
+      prstya.style.display = 'block'
+      penging.style.display = 'none'
+      prstya.style.whiteSpace = 'nowrap'
+      
+      
+      
+    });
+    //tobemy
+    sleep(31000).then(() => {
+      penging.innerHTML = 'To Be My'
+      jj.style.display = 'none'
+      prstya.style.display = 'block'
+      penging.style.display = 'block'
+      prstya.style.whiteSpace = 'nowrap'
+      penging.style.animation = ketik
+      
+      
+      
+    });
+    sleep(33000).then(() => {
+      jj.style.fontFamily = 'dark seed'
+      jj.innerHTML = 'Girlfriend'
+      jj.style.display = 'block'
+      prstya.style.display = 'block'
+      penging.style.display = 'block'
+      prstya.style.whiteSpace = 'nowrap'
+      jj.style.animation = ketik
+      jj.style.fontSize = '40px'
+      
+      
+    });
+    sleep(37000).then(() => {
+      jj.onclick = function event() {
+        jj.style.animation = 'glic 1s steps(100) infinite'
+        setTimeout(function(){ jj.style.animation = 'none' }, 3000);
+      } 
+      prstya.onclick = function event() {
+        prstya.style.animation = 'glic 1s steps(100) infinite'
+        setTimeout(function(){ prstya.style.animation = 'none' }, 3000);
+      } 
+      penging.onclick = function event() {
+        penging.style.animation = 'glic 1s steps(100) infinite'
+        setTimeout(function(){ penging.style.animation = 'none' }, 3000);
+      }     
+      
+      
+    });
+    
+    
     
   } else {
     document.getElementById('dafaprasetya').innerHTML = 'Happy Birthday!!';

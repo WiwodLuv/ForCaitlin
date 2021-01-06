@@ -12,6 +12,10 @@
     src: url(font/cyber.ttf);
   }
 @font-face{
+    font-family: "east";
+    src: url(font/p.ttf);
+  }
+@font-face{
     font-family: "Crush";
     src: url(font/kntl.ttf);
   }
@@ -136,7 +140,7 @@ body{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: white ;
     border-radius: 50%;
     box-shadow: 0 0 5px #55ebff,
     0 0 10px #55ebff,
