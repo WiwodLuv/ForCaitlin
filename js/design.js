@@ -254,11 +254,11 @@ const quotes = [
     "source": "WiwodOtsutsuki"
   },
   {
-    "quote": "Selamat Ulang Tahun Beb",
+    "quote": "Yuuuu",
     "source": "WiwodOtsutsuki"
     },
   {
-    "quote": "Mabar Yuk",
+    "quote": "LuvLop",
     "source": "WiwodOtsutsuki"
   },
   {
@@ -311,7 +311,7 @@ showTime();
 
 function dafaprstya() {
   
-  document.getElementById('dafaprasetya').innerHTML = 'Happy Birthday!!';
+  document.getElementById('dafaprasetya').innerHTML = 'Hello Cait';
   if (window.performance) {
     console.info("Hiii");
   }
@@ -352,7 +352,7 @@ function ppp(){
   var jj = document.getElementById("inget")
   var audio = document.getElementById("audio")
   var ketik = 'typing 2s steps(25, end), blink-caret .5s step-end infinite'
-  if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  var q = document.getElementById('loper')
     document.getElementById('temah').disabled = true
     audio.pause()
     sleep(3000).then(() => {
@@ -395,6 +395,7 @@ function ppp(){
       
       
       
+      
     });
     sleep(8000).then(() => {
       penging.style.display = 'block'
@@ -410,13 +411,13 @@ function ppp(){
       
       
     });
-    //sebelumnya
+    
     sleep(9000).then(() => {
       document.getElementById('aurora').style.display = 'none'
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
       penging.style.animation = 'typing 2s steps(25, end), blink-caret .5s step-end infinite'
-      penging.innerHTML = 'Sebelumnya'
+      penging.innerHTML = 'mmmm..'
       jj.style.display = 'none'
       prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
@@ -444,7 +445,7 @@ function ppp(){
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
       penging.style.animation = ketik
-      penging.innerHTML = 'Gw Mau Ngucapin'
+      penging.innerHTML = 'Hmmm...'
       jj.style.display = 'none'
       prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
@@ -472,7 +473,7 @@ function ppp(){
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
       penging.style.animation = ketik
-      penging.innerHTML = 'Happy Birthday!!'
+      penging.innerHTML = 'Gimana ya..'
       jj.style.display = 'none'
       prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
@@ -500,7 +501,7 @@ function ppp(){
       document.getElementById("jam").style.display = 'none'
       document.getElementById("ea").style.display = 'none'
       penging.style.animation = ketik
-      penging.innerHTML = 'And'
+      penging.innerHTML = 'Hmmmmm..'
       jj.style.display = 'none'
       prstya.style.display = 'none'
       penging.style.whiteSpace = 'nowrap'
@@ -608,17 +609,34 @@ function ppp(){
     });
     sleep(33000).then(() => {
       jj.style.fontFamily = 'dark seed'
-      jj.innerHTML = 'Girlfriend'
+      jj.innerHTML = 'L O V E R ?'
+      jj.style.letterSpacing = '10px'
       jj.style.display = 'block'
       prstya.style.display = 'block'
       penging.style.display = 'block'
-      prstya.style.whiteSpace = 'nowrap'
+      jj.style.whiteSpace = 'nowrap'
       jj.style.animation = ketik
       jj.style.fontSize = '40px'
       
       
     });
     sleep(37000).then(() => {
+      
+      document.getElementById("ea").style.display = 'block'
+      document.getElementById("ea").style.animation = 'none'
+      document.getElementById("source").style.display = 'none'
+      document.getElementById('quotation').style.display = 'none'
+      q.style.whiteSpace = 'nowrap'
+      q.style.fontFamily = 'pubg'
+      q.style.display = 'block'
+      q.style.wordSpacing = '10px'
+      q.style.letterSpacing = '3px'
+      q.style.animation = 'fadein 3s'
+      q.innerHTML = 'Di P U B G'
+      
+      
+    });
+    sleep(39000).then(() => {
       jj.onclick = function event() {
         jj.style.animation = 'glic 1s steps(100) infinite'
         setTimeout(function(){ jj.style.animation = 'none' }, 3000);
@@ -630,16 +648,22 @@ function ppp(){
       penging.onclick = function event() {
         penging.style.animation = 'glic 1s steps(100) infinite'
         setTimeout(function(){ penging.style.animation = 'none' }, 3000);
+      }    
+      q.onclick = function event() {
+        q.style.animation = 'glic 1s steps(100) infinite'
+        setTimeout(function(){ q.style.animation = 'none' }, 3000);
       }     
+      
+      
+    });
+    sleep(100000).then(() => {
+      window.location.href = 'https://api.whatsapp.com/send?phone=6281574999858&text=Ya aing mau'   
       
       
     });
     
     
     
-  } else {
-    document.getElementById('dafaprasetya').innerHTML = 'Happy Birthday!!';
-
-  }
+  
 }  
 ppp();

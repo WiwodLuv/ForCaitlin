@@ -20,6 +20,10 @@
     src: url(font/kntl.ttf);
   }
 @font-face{
+    font-family: "pubg";
+    src: url(font/pugbr.ttf);
+  }
+@font-face{
     font-family: "digital";
     src: url(font/digital-7.ttf);
   }
@@ -810,6 +814,24 @@ audio{
   transform: translate(-50%, -50%);
   animation: nongol 3s 1;
 }
+#loper{
+  cursor: pointer;
+  width: 400px;
+  height: 150px;
+  font-size: 40px;
+  font-family: 'Source Code Pro', monospace;
+  color: #333333;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  z-index: 9999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+
 
 #inget{
   cursor: pointer;
