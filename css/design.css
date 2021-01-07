@@ -1387,6 +1387,10 @@ transition: 0.5s;
   }
   .bulet blockquote{
     top: 90%;
+    left: 50%;
+  }
+  #loper{
+    top: 90%;
     left: 55%;
   }
   .bulet span:nth-child(1){
@@ -1461,6 +1465,7 @@ transition: 0.5s;
   .bulet blockquote{
     left: 50%;
   }
+  
   .bok{
     position: absolute;
     font-size: 15px;
@@ -1518,4 +1523,8 @@ transition: 0.5s;
     z-index: 1;
      display: block;
    }
+   #loper{
+    left: 125%;
+    top: 130%;
+  }
 }

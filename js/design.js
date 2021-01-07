@@ -353,6 +353,7 @@ function ppp(){
   var audio = document.getElementById("audio")
   var ketik = 'typing 2s steps(25, end), blink-caret .5s step-end infinite'
   var q = document.getElementById('loper')
+  q.style.display = 'block'
     document.getElementById('temah').disabled = true
     audio.pause()
     sleep(3000).then(() => {
